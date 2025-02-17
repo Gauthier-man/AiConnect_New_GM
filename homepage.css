@@ -1,0 +1,419 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* background-color: #111; */
+    color: white;
+    /* text-align: center; */
+}
+
+main {
+    background-image: url("background/bg3_co10.jpg");
+}
+
+
+
+
+
+
+.hero {
+    padding: 100px 20px;
+    /* height: 100vh; */
+    height: 56vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    background-color: #111;
+    z-index: 1;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background_onepice.png');
+    background-size: cover;
+    background-position: top;
+    opacity: 0.05;
+    z-index: -1; /* Place l'image derrière le contenu */
+}
+
+.hero h1 {
+    font-family: "Kaushan Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+
+.hero h1 {
+   
+    margin: 0;
+    font-family: "Kaushan Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+}
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: "Oswald", serif;
+    font-weight: 200;
+    color: rgb(173, 171, 168);
+
+}
+
+/*SECTION ANIME SEASON */
+
+/* Styles généraux */
+.anime_season {
+    text-align: center;
+    padding: 20px;
+    background: #f8f8f8;
+    position: relative; /* Nécessaire pour positionner les flèches */
+    background-image: url("background/bg3_co10.jpg");
+}
+
+/* Style du titre */
+.anime_season .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: black;
+    margin-bottom: 3rem;
+}
+
+/* Conteneur Swiper */
+.swiper-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    position: relative; /* Important pour positionner les flèches */
+    padding: 0 50px; /* Ajout d'un padding pour éloigner les flèches */
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Style des slides */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+
+.swiper-slide img {
+    width: 100%;
+    max-height: 466px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Style des flèches */
+.swiper-container i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Centre verticalement */
+    font-size: 30px;
+    color: #50385B;
+   
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 35px;
+    color: black;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease-in-out;
+    z-index: 10; /* S'assurer que les flèches sont bien devant */
+}
+
+
+.swiper-button-prev {
+    left: -80px; /* Ajuster pour éloigner du contenu */
+}
+
+
+.swiper-button-next {
+    right: -80px; /* Ajuster pour éloigner du contenu */
+}
+
+/* Effet au survol des flèches */
+.swiper-button-prev:hover, .swiper-button-next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Effet au survol */
+.swiper-container i:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.fi-rs-angle-left {
+    color: black;
+}
+
+.fi-rs-angle-right {
+    color: black;
+}
+
+
+/* Boutons de navigation */
+/* .swiper-button-prev,
+.swiper-button-next {
+    color: #fff !important;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background: rgba(0, 0, 0, 0.8);
+} */
+
+/****ABOUT *****/
+
+.lawliet_bloc {
+    background-color: #1E1E29;
+    width: 17%;
+    height: 375px;
+}
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+.about_content p {
+    font-family: "Urbanist", serif;
+}
+.about_content {
+    color: black;
+    text-align: left;
+}
+
+button {
+    background-color: #1E1E29;
+    width: 47%;
+    height: 75px;
+    color: white;
+    font-weight: 700;
+    border-radius: 0.8rem;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -150%;
+    width: 200%;
+    height: 300%;
+    background: linear-gradient(120deg, transparent 30%, rgba(255, 255, 255, 0.7) 50%, transparent 70%);
+    transform: skewX(-20deg);
+    transition: 0.2s ease-in-out;
+}
+
+button:hover::before {
+    left: 150%;
+}
+
+button:hover {
+    background-color: #29293D;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.9), 0 0 40px rgba(255, 0, 0, 0.6);
+    transform: scale(1.08);
+}
+
+
+
+
+/****ABOUT SECTION *****/
+
+.about-section {
+    display: flex;
+    background-color: #111115;
+    padding: 20px;
+    border-radius: 10px;
+    /* max-width: 800px; */
+    align-items: center;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+}
+.image-container {
+    display: flex;
+}
+.image-container img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.text-container {
+    /* margin-left: 20px; */
+    text-align: left;
+}
+
+.text-container p {
+    color: rgb(173, 171, 168);
+}
+
+h2 {
+    font-family: "Kaushan Script", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+.join-button {
+    background-color: #1E1E29;
+    color: white;
+    border: none;
+    padding: 19px 48px;;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    border: solid 1px #484860;
+}
+
+.join-button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+
+/****FORUM SECTION******/
+
+.forum-section {
+    background-color: white;
+    margin-top: 5rem;
+}
+
+.forum-section h2 {
+    color: black;
+
+}
+.forum-container {
+    width: 80%;
+    max-width: 900px;
+    background: #222;
+    color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.forum-image {
+    flex: 1;
+    background: url('Banner.png') center/cover;
+    height: 200px;
+}
+.forum-content {
+    flex: 1;
+    background: #111;
+    padding: 20px;
+    text-align: left;
+}
+.forum-content h2 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: white;
+}
+.forum-content p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.forum-button {
+    display: inline-block;
+    background: #6c46a0;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.forum-description {
+    margin-top: 20px;
+    font-size: 17px;
+    color: #555;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*****FORUM ACCESS*****/
+
+
+.forum_access {
+    background-image: url("banner/kanekiforum.png");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+    height: 509px;
+    background-color: black;
+    margin-top: 5rem;
+    position: relative;
+}
+
+.forum_access_content {
+    position: absolute;
+    top: 50%;
+    left: 10%; /* Ajuste la position horizontale */
+    transform: translateY(-50%); /* Centre verticalement */
+    background: rgba(0, 0, 0, 0.7); /* Optionnel : ajoute un fond pour améliorer la lisibilité */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.forum_access_content h1 {
+    font-family: "Luckiest Guy", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+}
+
+.forum_access_content button {
+    font-size: 1rem;
+}
+
+
+
+    

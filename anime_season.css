@@ -1,0 +1,35 @@
+* {
+    background-color: black;
+}
+
+main {
+ 
+    background-color: black;
+    width: 100%;
+    height: auto;
+    
+}
+
+body {
+    margin: 0;
+}
+
+.anime-showcase {
+    text-align: center;
+    margin-top: 5rem;
+    
+}
+
+.anime-showcase h1 {
+    font-family: Abel;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40.78px;
+    letter-spacing: 0%;
+    color: white;
+    text-align: left;
+    margin-left: 3rem;
+  
+
+
+}

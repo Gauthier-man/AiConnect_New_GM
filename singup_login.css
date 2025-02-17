@@ -1,0 +1,133 @@
+/****** General ***********/
+
+
+
+:root {
+  --main-color: #f3ab26;
+  --main-bg-color: #eed098;
+  --filter-bg-color: #735c5c;
+  --gap: 30px;
+  --red: #f94868;
+  --white: #ffffff;
+  --grey: #f2f2f2;
+}
+
+
+/* body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+} */
+
+main {
+  /* max-width: 1920px;
+  margin: auto; */
+  padding: 4rem 7rem 0;
+}
+
+
+
+
+
+
+.background-container {
+  position: relative;
+  z-index: 0; /* Le fond reste derrière le contenu */
+  /* 
+  max-width: 1920px;
+  margin: auto; */
+}
+
+.background-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/background/ef01c670c1a2065a7e2e9b19b5a21b05 1.png"); /* Image de fond */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.03; /* Opacité pour l'image */
+  z-index: -1; /* S'assure que le fond reste derrière */
+}
+
+/* Sections enfants pour qu'elles soient visibles */
+
+footer {
+  background-color: #0f0f0f;
+  width: 100%;
+  height: 400px;
+  position: relative; /* Nécessaire pour positionner l'overlay */
+
+  background-image: url("images/footer/attaque-titans-1-ext1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1; /* Assurez-vous que l'image reste derrière le contenu */
+}
+
+footer::after {
+  content: ""; /* Nécessaire pour créer un élément virtuel */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: -1; /* Positionne l'overlay derrière le contenu */
+}
+
+
+h5 {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+footer p {
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer_block {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  padding: 2rem 0;
+}
+
+.block_logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.block_logo img {
+  width: 100px;
+}
+
+
+
+#forum-section {
+  max-width: 1411px;
+  margin: auto;
+}
+
+@media screen and (min-width: 2560px) {
+  #forum-section {
+    max-width: 1811px;
+  
+  }
+}
+
+@media screen and (max-width: 1920px) {
+
+
+
+}
