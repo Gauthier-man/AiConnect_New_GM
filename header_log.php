@@ -1,5 +1,7 @@
 <?php
-session_start();  // Assure-toi que la session est démarrée ici aussi
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 ?>
 
 
@@ -33,7 +35,9 @@ session_start();  // Assure-toi que la session est démarrée ici aussi
         <nav>
             <ul>
                 <li><a href="forum.php">Forum</a></li>
-                <li><a href="#">Parcourir</a></li>
+                <li><a href="#">Animes</a></li>
+                <li><a href="#">Mangas</a></li>
+                <li><a href="#">Blog</a></li>
                 <li><a href="#">Pages</a></li>
             </ul>
         </nav>

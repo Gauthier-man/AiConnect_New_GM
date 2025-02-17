@@ -56,32 +56,10 @@
   </head>
   <body>
     <div class="background-container">
-      <header class="fixed">
-        <a href="index.php">
-          <img src="logo.png" alt="ceci est un logo" />
-        </a>
-        <div class="nav-icons-container">
-          <nav>
-            <ul>
-              <li><a href="forum.php">Forum</a></li>
-              <li><a href="#">Parcourir</a></li>
-              <li><a href="#">Pages</a></li>
-            </ul>
-          </nav>
-          <div class="icons">
-            <i class="fi fi-rs-bell"></i>
+    <header>
+    <?php include 'header_log.php'; ?>
+    </header>
 
-            <!-- Icône utilisateur avec menu déroulant -->
-            <div class="user-icon">
-              <i class="fi fi-rr-user"></i>
-              <div class="user-menu">
-                <a href="signup.php">S'inscrire</a>
-                <a href="login.php">Se connecter</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
       <main>
         <section id="signup_users">
           <div class="background_log">

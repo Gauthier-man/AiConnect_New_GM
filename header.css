@@ -134,7 +134,7 @@ header.fixed {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 41px;
     font-family: Arial, sans-serif;
 }
 nav ul li {
