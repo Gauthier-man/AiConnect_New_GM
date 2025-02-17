@@ -63,7 +63,7 @@
         <div class="nav-icons-container">
           <nav>
             <ul>
-              <li><a href="forum.html">Forum</a></li>
+              <li><a href="forum.php">Forum</a></li>
               <li><a href="#">Parcourir</a></li>
               <li><a href="#">Pages</a></li>
             </ul>
