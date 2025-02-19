@@ -1,0 +1,23 @@
+#forum-section {
+    max-width: 1033px;
+    margin: auto;
+}
+
+.mini_block .fi {
+    color: black;
+}
+
+.title_block a {
+    color: black;
+    padding: 0;
+    text-decoration: none;
+    
+
+  }
+
+
+  .title_block h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }

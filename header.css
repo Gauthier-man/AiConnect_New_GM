@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: center; /* Centre la nav + icônes */
     align-items: center;
-    padding: 20px;
+    padding: 20px 0;
     background: transparent;
     position: absolute;
     /* width: 100%; */
@@ -28,6 +28,7 @@ header.fixed {
     z-index: 11;
     background: rgba(0, 0, 0, 0.9); /* Optionnel, donne un fond semi-transparent */
     width: 100%;
+    height: 30px;
 }
 
 /* Positionne l'icône utilisateur et le menu */
@@ -122,6 +123,147 @@ header.fixed {
     font-weight: 600;
 }
 
+/* Cacher le menu burger par défaut */
+.burger-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    /* right: 0; */
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 250px;
+    z-index: 10;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Aligner les éléments en haut */
+    text-align: center;
+    padding-top: 50px; /* Ajouter de l'espace au top */
+}
+
+
+
+.burger-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.burger-menu ul li {
+    margin: 20px 0;
+}
+
+.burger-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/* Effet néon au hover */
+.burger-menu ul li a:hover {
+    color: white; /* Texte blanc au centre */
+    text-shadow: 
+        0 0 5px white,   /* Lueur interne blanche */
+        0 0 10px #c084fc,  /* Halo violet clair */
+        0 0 20px #9333ea, /* Halo violet plus intense */
+        0 0 40px #6b21a8; /* Effet néon plus large */
+}
+
+/* Ajout d'un surlignement sous les liens */
+.burger-menu ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    box-shadow: 0 0 10px #9333ea, 0 0 20px #6b21a8;
+    transition: width 0.3s ease, left 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.burger-menu ul li a:hover::after {
+    width: 50%;
+}
+
+
+
+
+@keyframes menuAppear {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(-5deg);
+        filter: brightness(2);
+    }
+    60% {
+        transform: scale(1.05) rotate(2deg);
+        filter: brightness(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+        filter: brightness(1);
+    }
+}
+
+@keyframes textAppear {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px) scale(1.2);
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+  
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Appliquer l'animation au menu */
+.burger-menu.active {
+    animation: menuAppear 0.3s ease-out;
+}
+
+/* Appliquer l'animation aux liens */
+.burger-menu ul li {
+    opacity: 0;
+    animation: textAppear 0.4s ease-out forwards;
+}
+
+.burger-menu ul li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.burger-menu ul li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.burger-menu ul li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.burger-menu ul li:nth-child(4) {
+    animation-delay: 0.4s;
+}
+.burger-menu ul li:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+
+
+
 
 
 .logo {
@@ -177,7 +319,7 @@ nav ul li a::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -15px;
+    bottom: -37px;
     width: 100%;
     height: 2px;
     background-color: white; /* Barre blanche pour l'effet lumineux */
@@ -227,8 +369,105 @@ nav ul li a:hover::after {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/****RESPONSIVE******/
+
+.hamburger-menu {
+    display: none;
+}
+
+.logo-mobile {
+    display: none;
+}
+
+
 @media screen and (min-width: 2560px) {
     header img {
         width: 4%;
     }
+}   
+
+@media screen and (max-width: 768px) {
+
+    header img {
+        display: none;
+    }
+/* Cacher le menu de navigation par défaut */
+    nav {
+        display: none;
+    }
+
+
+  /* Empêcher le scroll lorsque le menu est ouvert */
+  body.no-scroll {
+    overflow: hidden;
+  }
+
+
+ /* Le menu burger et logo mobile sont visibles sur mobile */
+ .hamburger-menu {
+    display: block;
+    cursor: pointer;
+}
+
+
+
+
+/* Afficher le logo mobile */
+.logo-mobile {
+    display: block;
+}
+
+
+    .icons {
+        display: none;
+    }
+
+
+
+    /***new_header_responsive**/
+  /* Utilisation de flexbox pour organiser les éléments */
+  .hamburger-menu,
+  .logo-mobile-container {
+      position: relative;
+  }
+
+  /* Centrer le hamburger à gauche et le logo à droite */
+  .hamburger-menu {
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      left: 20px; /* À gauche de l'écran */
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 22px;
+      color: white;
+  }
+
+  /* Affichage du logo mobile */
+  .logo-mobile {
+      display: block;
+      position: absolute;
+      right: 20px; /* À droite de l'écran */
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100px;
+      
+  }
+
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+}
+
+    .burger-menu.active {
+    display: flex;
+}
+/* Effet pour l'icône du hamburger */
+
+
 }

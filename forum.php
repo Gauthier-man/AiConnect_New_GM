@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="header.css" class="css" />
     <link rel="stylesheet" href="style.css" class="css" />
     <link rel="stylesheet" href="style2.css" class="css" />
+    <link rel="stylesheet" href="forum.css" class="css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>

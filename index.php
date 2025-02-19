@@ -119,39 +119,7 @@
         </a>
         </div>
       </section>
-      <!-- <section class="about-section">
-        <div class="image-container">
-          <img src="about_pic\Pica-enhance-20250205130327 1.png" alt="Personnage mystérieux" />
-        </div>
-        <div class="text-container">
-          <h2>À propos</h2>
-          <p>
-            Bienvenue dans notre espace dédié aux passionnés d’animés et de mangas. Ici, les fans se retrouvent pour
-            échanger, débattre et partager leurs découvertes. Que tu sois un amateur de shonen, un adepte de seinen ou
-            un explorateur de perles méconnues, tu trouveras une communauté prête à discuter et à t’accueillir.
-          </p>
-          <button class="join-button">REJOINDRE</button>
-          <img src="discord-icon.png" alt="Discord" />
-        </div>
-      </section> -->
-
-      <!-- <section class="forum-section">
-        <h2>Disucssions Forum</h2>
-        <div class="forum-container">
-          <div class="forum-image"></div>
-          <div class="forum-content">
-            <h2>Forum</h2>
-            <p>Rejoins la discussion et partage ta passion avec la communauté !</p>
-            <a href="#" class="forum-button">Accéder au forum</a>
-          </div>
-        </div>
-        <p class="forum-description">
-          "Envie de discuter de ton anime préféré, de débattre sur les derniers épisodes ou de partager tes théories ?
-          Notre page Forum est l'endroit idéal pour échanger avec d'autres passionnés, découvrir des discussions animées
-          et rencontrer de nouveaux amis de la communauté ! Que tu sois un novice ou un expert, il y a toujours une
-          conversation qui t’attend."
-        </p>
-      </section> -->
+    
     </main>
     <footer></footer>
   </body>

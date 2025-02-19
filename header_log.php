@@ -14,7 +14,7 @@ if (session_status() == PHP_SESSION_NONE) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="header.css" class="css" />
-    
+    <script src="menu_hamburger.js" defer></script>
     <!-- <script src="header_signup.js" defer></script> -->
 
     <link
@@ -29,8 +29,31 @@ if (session_status() == PHP_SESSION_NONE) {
 <body>
 <header class="fixed">
     <a href="index.php">
-        <img src="logo.png" alt="ceci est un logo" />
+        <img src="logo.png" alt="ceci est un logo" class="logo_responsive" />
     </a>
+
+ <!-- Menu hamburger pour mobile -->
+ <div class="hamburger-menu" id="hamburgerMenu">
+        <i class="fi fi-rr-menu-burger"></i> <!-- Icône hamburger -->
+    </div>
+
+ <!-- Menu burger avec les liens -->
+ <div class="burger-menu" id="burgerMenu">
+        <ul>
+            <li><a href="forum.php">Forum</a></li>
+            <li><a href="#">Animes</a></li>
+            <li><a href="#">Mangas</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Parcourir</a></li>
+        </ul>
+    </div>
+
+
+    <!-- Nouveau logo responsive à droite -->
+    <a href="index.php" class="logo-mobile-container">
+        <img src="images\Logo\RjDcsTJJTEa6BfDEFXqyHQ-removebg-preview.png" alt="Logo mobile" class="logo-mobile">
+    </a>
+
     <div class="nav-icons-container">
         <nav>
             <ul>

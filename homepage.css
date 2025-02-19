@@ -416,4 +416,73 @@ h2 {
 
 
 
-    
+@media (max-width: 560px) {
+
+
+    .forum_access {
+        height: 250px; 
+        background-size: contain; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .lawliet_bloc {
+     
+        width: 56%;
+        height: 251px;
+    }
+
+    .lawliet_bloc img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .about {
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+
+    .about_content {
+        text-align: center;
+    }
+
+    .about_content p {
+        width: 95%;
+        margin: auto;
+    }
+
+    button {
+        margin-top:  2rem;
+    }
+
+    .swiper-slide img {
+        width: 120px;
+    }
+
+    .forum_access_content {
+        background: none;
+    }
+
+    .forum_access_content h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+  
+    .forum_access_content p {
+        font-size: 0.6rem;
+        width: 60%;
+    }
+
+    .forum_access_content button {
+        width: 37%;
+        height: 46px;
+        font-size: 0.6rem;
+
+    }
+
+        .forum_access {
+        height: 208px;
+        background-size: contain;
+    }
+}
