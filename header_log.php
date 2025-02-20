@@ -50,9 +50,11 @@ if (session_status() == PHP_SESSION_NONE) {
 
 
     <!-- Nouveau logo responsive à droite -->
+     
     <a href="index.php" class="logo-mobile-container">
         <img src="images\Logo\RjDcsTJJTEa6BfDEFXqyHQ-removebg-preview.png" alt="Logo mobile" class="logo-mobile">
     </a>
+    
 
     <div class="nav-icons-container">
         <nav>
